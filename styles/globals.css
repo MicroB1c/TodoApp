@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-100 text-gray-900 min-h-screen flex items-center justify-center;
+}
+
+form input, form button {
+  @apply w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500;
+}
+
+form button {
+  @apply bg-blue-600 text-white rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500;
+}
+
+ul li {
+  @apply bg-gray-50 p-4 rounded-lg shadow-md flex justify-between items-center;
+}
+
+ul li button {
+  @apply px-4 py-2 bg-red-600 text-white rounded-md shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500;
+}

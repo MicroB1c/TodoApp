@@ -1,0 +1,15 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Invoice {
+  id        Int      @id @default(autoincrement())
+  amount    Float
+  dueDate   DateTime
+  status    String
+}
